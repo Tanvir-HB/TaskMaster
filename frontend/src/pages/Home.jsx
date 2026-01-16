@@ -34,12 +34,12 @@ const HomeContent = () => {
 
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <header className="flex justify-between items-center mb-8">
+            <header className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0 mb-8">
                 <div>
                     <h1 className="text-2xl font-bold text-gray-900">My Tasks</h1>
                     <p className="text-gray-500 mt-1">Manage all your todos in one place</p>
                 </div>
-                <div className="flex gap-3">
+                <div className="flex gap-3 w-full sm:w-auto">
                     <button
                         onClick={() => setShowCategoryManager(true)}
                         className="flex items-center gap-2 px-4 py-2 bg-white text-indigo-600 border border-indigo-200 rounded-lg hover:bg-indigo-50 transition-colors shadow-sm"
