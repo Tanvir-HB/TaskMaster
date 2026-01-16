@@ -29,7 +29,7 @@ const Navbar = () => {
                                     <div className="h-8 w-8 rounded-full overflow-hidden bg-gray-200 border border-gray-300">
                                         {user.profilePicture ? (
                                             <img
-                                                src={`${assetBaseUrl}${user.profilePicture}`}
+                                                src={user.profilePicture.startsWith("http") ? user.profilePicture : `${assetBaseUrl}${user.profilePicture}`}
                                                 alt={user.name}
                                                 className="h-full w-full object-cover"
                                             />
@@ -73,4 +73,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
